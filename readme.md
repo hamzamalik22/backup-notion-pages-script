@@ -96,7 +96,7 @@ def main():
 Run the script:
 
 ```bash
-python notion_backup.py
+python notion.py
 ```
 
 The script will:
