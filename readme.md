@@ -1,3 +1,12 @@
+<div align="center">
+   <p align="center">
+      <img src="https://logos-world.net/wp-content/uploads/2024/08/Notion-Logo.png" width="100" height="100" alt="Notion Logo" style="object-fit: cover;"/>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Google_Drive.png" width="100" height="100" alt="Google Drive Logo" style="object-fit: cover;"/>
+   </p>
+</div>
+
 # Notion to Google Drive Backup Script
 
 This Python script automatically backs up your Notion pages to Google Drive, maintaining the hierarchical structure of your pages. Each page is saved in its own folder, with subpages organized as subfolders.
