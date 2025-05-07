@@ -6,6 +6,11 @@ from googleapiclient.http import MediaIoBaseUpload
 import json
 from datetime import datetime
 import io
+from dotenv import load_dotenv
+
+
+# Load environment variables from .env file
+load_dotenv()
 
 class NotionBackup:
     def __init__(self, notion_token, service_account_path, root_folder_id):
@@ -199,9 +204,9 @@ class NotionBackup:
 
 def main():
     # Configuration
-    NOTION_TOKEN = "YOUR_NOTION_API_KEY"  # Your Notion API key
-    SERVICE_ACCOUNT_PATH = "service-account-key.json"  # Path to service account JSON file
-    ROOT_FOLDER_ID = "GOOGLE_DRIVE_FOLDER_ID"  # Google Drive folder ID
+    NOTION_TOKEN = os.getenv("NOTION_API_KEY")  # Your Notion API key
+    SERVICE_ACCOUNT_PATH = "the-service-account-key.json"  # Path to service account JSON file
+    ROOT_FOLDER_ID = os.getenv("GOOGLE_DRIVE_FOLDER_ID")  # Google Drive folder ID
     # Initialize and run backup
     backup = NotionBackup(NOTION_TOKEN, SERVICE_ACCOUNT_PATH, ROOT_FOLDER_ID)
     backup.run_backup()

@@ -1,2 +1,9 @@
 myvir
 *myvir
+
+.env
+
+*.env
+
+
+the-service-account-key.json
