@@ -1,6 +1,10 @@
 myvir
 *myvir
 
+venv
+
+*venv
+
 .env
 
 *.env
